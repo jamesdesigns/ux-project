@@ -1,15 +1,23 @@
 html {
-    background: url(images/background-blank-empty-light-62693.jpg) no-repeat center center fixed; 
+    /* background: url(images/background-blank-empty-light-62693.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
+    background: #4e54c8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     font-family: 'Cuprum', sans-serif;
     font-size: 8rem;
-    color:#282828;
+    color:#fff;
 
 }
 
