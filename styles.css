@@ -21,44 +21,40 @@ header {
     top:0;
     width: 100%;
     height: 4.5rem; 
-    background-color: white;
 }
 
 p {
     color: #002b80;
 }
 
-
 .title {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
+    padding-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
     height: 300px;
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Gelasio', serif;
     font-size: 8rem;
     color:#fff;
 }
 
 #rules {
 margin: 0;
-position: absolute;
-top: 70%;
-left: 50%;
-margin-right: -50%;
-transform: translate(-50%, -50%);
 font-size: 3rem;
 font-weight: 400; /* This fixes iOS bug with Google Fonts wide letter spacing */
+/* margin-left: 1%; */
+margin-left: auto;
+margin-right: auto;
 }
 
 article {
