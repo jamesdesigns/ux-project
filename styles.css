@@ -11,14 +11,23 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-family: 'Cuprum', sans-serif;
-    font-size: 8rem;
-    color:#fff;
+header {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 4.5rem; 
+    background-color: white;
 }
+
+p {
+    color: #002b80;
+}
+
 
 .title {
     margin: 0;
@@ -35,6 +44,12 @@ h1 {
     height: 300px;
 }
 
+h1 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 8rem;
+    color:#fff;
+}
+
 #rules {
 margin: 0;
 position: absolute;
@@ -44,4 +59,21 @@ margin-right: -50%;
 transform: translate(-50%, -50%);
 font-size: 3rem;
 font-weight: 400; /* This fixes iOS bug with Google Fonts wide letter spacing */
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem; 
 }
