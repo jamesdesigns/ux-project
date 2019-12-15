@@ -37,4 +37,5 @@ left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%);
 font-size: 3rem;
+font-weight: 400; /* This fixes iOS bug with Google Fonts wide letter spacing */
 }
