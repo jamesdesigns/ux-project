@@ -22,3 +22,8 @@ gsap.to("#menuBtn", {y:-5, duration: 1});
 // function displayMenu() {
 //     document.getElementById("footerBox").style.display = 'block';
 // }
+
+// Function to change webpage background color
+function changeBodyBg(color){
+    document.body.style.background = color;
+}

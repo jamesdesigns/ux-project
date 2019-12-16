@@ -23,6 +23,24 @@ header {
     height: 4.5rem; 
 }
 
+.colorOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+}
+
+.selectStyle {
+    color: white;
+    font-size: 1rem;
+    /* margin-top: 20px; */
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
 p {
     color: #002b80;
 }
@@ -85,6 +103,7 @@ button {
     font-size: 2rem;
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 footer {
