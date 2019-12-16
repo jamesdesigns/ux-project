@@ -15,9 +15,8 @@ let x = document.getElementById('rules');
 x.style.color = randomColors;
 
 // GreenSock MENU
-// gsap.to(".tapBtn", {y: -10, duration: 1});
-gsap.to("#menuBtn", {y:-30, duration: 1});
-// gasp.to(".footerBox", {y: -400, duration: 1});
+gsap.to("#menuBtn", {y:-5, duration: 1});
+
 
 
 // function displayMenu() {
