@@ -73,6 +73,8 @@ font-weight: 400; /* This fixes iOS bug with Google Fonts wide letter spacing */
 /* margin-left: 1%; */
 margin-left: auto;
 margin-right: auto;
+width: 75%;
+text-align: center;
 }
 
 /* article {

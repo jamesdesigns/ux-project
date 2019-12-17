@@ -8,7 +8,7 @@ let newRule = document.getElementById("rules");
 // Make the rules output randomly using the Math.random
 newRule.innerHTML = rules[Math.floor(Math.random() * rules.length)];
 
-let colors = ['#002b80','#282828','#F0F0F0'];
+let colors = ['#F0F0F0']; /* '#002b80','#282828',  */
 let randomColors = colors[Math.floor(Math.random()*colors.length)];
 
 let x = document.getElementById('rules');
