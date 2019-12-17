@@ -57,7 +57,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    height: 710px; /* This allows the new bg color change to cover the intro */
+    height: 740px; /* This allows the new bg color change to cover the intro */
 }
 
 h1 {
@@ -151,5 +151,5 @@ li a {
 }
 
 li a:hover {
-    color: #0083B0;
+    color: #686868;
 }
