@@ -141,8 +141,6 @@ padding-bottom: 15px;
 li {
     float: left;
     padding-right: 35px;
-
-
 }
 
 li a {
@@ -152,4 +150,10 @@ li a {
 
 li a:hover {
     color: #686868;
+}
+
+.active {
+    border-bottom: 2px solid#ccc;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
 }
