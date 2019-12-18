@@ -57,7 +57,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    height: 740px; /* This allows the new bg color change to cover the intro */
+    height: 820px; /* This allows the new bg color change to cover the intro */
 }
 
 h1 {
@@ -126,7 +126,7 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 200px;
-    clear: both;
+    /* clear: both; */
 }
 
 ul {
