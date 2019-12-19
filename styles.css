@@ -4,8 +4,10 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
+
+    height: 100%;
     background: #00B4DB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
@@ -14,13 +16,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    height: 100%;
 }
 
 header {
-    position: absolute;
-    top:0;
+    /* position: absolute; */
+    /* top:0; */
     width: 100%;
-    height: 4.5rem; 
+    /* height: 4.5rem;  */
 }
 
 .colorOptions {
@@ -47,7 +50,14 @@ p {
 
 .title {
     margin: 0;
-    /* padding-top: 18.5%; */
+    /* margin-top: 10%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title2 {
+    margin: 0;
+    /* margin-top: 15rem; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -57,13 +67,65 @@ p {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    height: 820px; /* This allows the new bg color change to cover the intro */
+    height: 770px; 
+}
+
+#customer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#authors li {
+    width: 25%;
+    height: 190px;
+    background-color: white;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px -11px 13px -8px rgba(0,0,0,0.59);
+    -moz-box-shadow: 1px -11px 13px -8px rgba(0,0,0,0.59);
+    box-shadow: 1px -11px 13px -8px rgba(0,0,0,0.59);
+}
+/* #authors li:first-child { margin-top: 100px;} */
+#authors img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 8%;
+
+}
+#authors span {
+  margin-left: 25px;
 }
 
 h1 {
     font-family: 'Gelasio', serif;
     font-size: 8rem;
     color:#fff;
+}
+
+article {
+    margin-top: 10%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+article h2 {
+    text-align: center;
+    font-family: 'Gelasio', serif;
+    font-size: 4rem;
+    color: white;
+}
+
+article p {
+    font-size: 1.15rem;
+    color: white;
+    padding-bottom: 300px;
+    line-height: 1.75;
 }
 
 #rules {
@@ -115,7 +177,7 @@ footer {
     width: 100%;
     height: 100px;
     background-color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0; 
 }
 
@@ -130,10 +192,10 @@ footer {
 }
 
 ul {
-display: block;
+/* display: block; */
 list-style-type: none;
-margin-left: 32.5%;
-margin-right: 33.5%;
+/* margin-left: 32.5%;
+margin-right: 33.5%; */
 margin-top: -10px;
 padding-bottom: 15px;
 }

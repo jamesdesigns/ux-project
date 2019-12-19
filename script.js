@@ -21,7 +21,8 @@ gsap.to("#menuBtn", {y:-25, duration: 1})
 
 // Function to change webpage background color
 function changeBodyBg(color1){
-    document.body.style.background = color1;
+  document.body.style.background = color1;
+
 }
 
 // Random User API
@@ -34,7 +35,7 @@ function append(parent, el) {
 }
 
 const ul = document.getElementById('authors');
-const url = 'https://randomuser.me/api/?results=1';
+const url = 'https://randomuser.me/api/?results=6';
 fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
@@ -44,7 +45,7 @@ fetch(url)
         img = createNode('img'),
         span = createNode('span');
     img.src = author.picture.medium;
-    span.innerHTML = `${author.name.first} ${author.name.last}`;
+    span.innerHTML = `&#8212; <i>${author.name.first} ${author.name.last}</i>`;
     append(li, img);
     append(li, span);
     append(ul, li);
