@@ -26,8 +26,9 @@ let x = document.getElementById('rules');
 x.style.color = randomColors;
 
 // GreenSock MENU
-gsap.to("#menuBtn", {y:-25, duration: 1})
+gsap.to("#menuBtn", {y:-25, duration: 1});
 // gsap.to(".menuBlock", {y:100, duration: 1}); 
+
 
 
 // Function to change webpage background color

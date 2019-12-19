@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact the UX Designer</title>
     <link href="https://fonts.googleapis.com/css?family=Gelasio:700|Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/0efae72baf.js" crossorigin="anonymous"></script>
-    <script src="gsap.min.js"></script>
+    <script src="js/gsap.min.js"></script>
 </head>
 <body>
-    <header>
+ <header>
+        <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>  
+          </div>
+
+
         <div class="colorOptions">
             <h4>Select Background Color: </h4>
             <button class="selectStyle" onclick="changeBodyBg('orange');">1</button>
@@ -22,7 +29,7 @@
     </header>
     <section class="intro">
         <h1 class="title2">Contact Us</h1>
-        <!-- <p id="rules"></p> -->
+
     </section> 
     <footer class="menuBlock">
         <div id="menuBtn"><button><!--<i class="fas fa-angle-up"></i>--><i class="fas fa-angle-down"></i></button></div>
@@ -36,6 +43,10 @@
                 </ul>
             
     </footer>
-    <script src="script.js"></script>   
+    <script src="js/script.js"></script>  
+    <script>
+        gsap.to("#menuBtn", {y:-25, duration: 1});
+    gsap.from(".title2", {y: -500, duration: 1});    
+    gsap.to(".title2", {y: -50, duration: 1});</script>
 </body>
 </html>
