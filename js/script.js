@@ -52,8 +52,9 @@ fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
   let authors = data.results;
-  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding the information. I don't want to scroll over and over looking for products to buy."];
-  const map1 = comments.map(x => x);
+  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding information. I don't want to scroll over and over looking for products to buy", " I love a seemless experience!"];
+  // const map1 = comments.map(x => x);
+  const map1 = comments[Math.floor(Math.random() * comments.length)];
   console.log(map1);
   
   return authors.map(function(author) {
