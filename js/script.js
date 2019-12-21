@@ -47,18 +47,28 @@ function append(parent, el) {
 }
 
 const ul = document.getElementById('authors');
-const url = 'https://randomuser.me/api/?results=6';
+const url = 'https://randomuser.me/api/?results=1';
 fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
   let authors = data.results;
+  const comments = ["This is my opinion","I just love a good experience!"];
+  const map1 = comments.map(x => x);
+  console.log(map1);
+  
   return authors.map(function(author) {
+
+
     let li = createNode('li'),
         img = createNode('img'),
         span = createNode('span');
-    img.src = author.picture.medium;
+        p = createNode('p');
+        img.src = author.picture.medium;
+
+    p.innerHTML = `${map1}`;
     span.innerHTML = `&#8212; <i>${author.name.first} ${author.name.last}</i>`;
     append(li, img);
+    append(li, p);
     append(li, span);
     append(ul, li);
   })
