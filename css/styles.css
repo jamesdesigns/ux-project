@@ -111,7 +111,7 @@ p {
 
 #authors li {
     width: 550px;
-    height: 270px;
+    height: 290px;
     background-color: white;
     margin-right: 35px;
     margin-bottom: 35px;
@@ -130,7 +130,7 @@ p {
     margin-top: 5%;
 }
 #authors span {
-  margin-left: 100px;
+  margin-left: 200px;
 }
 #authors p {
     text-align:center;

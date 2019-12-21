@@ -52,7 +52,7 @@ fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
   let authors = data.results;
-  const comments = ["This is my opinion","I just love a good experience!"];
+  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding the information. I don't want to scroll over and over looking for products to buy."];
   const map1 = comments.map(x => x);
   console.log(map1);
   
