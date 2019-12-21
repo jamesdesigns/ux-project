@@ -52,8 +52,7 @@ fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
   let authors = data.results;
-  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding information. I don't want to scroll over and over looking for products to buy", " I love a seemless experience!"];
-  // const map1 = comments.map(x => x);
+  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding information. I don't want to scroll over and over looking for products to buy.", "I love a seemless experience when shopping online!", "Having to scroll endlessly is not my idea of a fun experience.", "It is really frustrating filling out a long form, all to lose it when I accidentally navigate to another page!", "The best experience for me is when there is an element of surprise on every page I visit. I love when websites surprise and entertain me."];
   const map1 = comments[Math.floor(Math.random() * comments.length)];
   console.log(map1);
   
