@@ -1,6 +1,6 @@
 // JavaScript 
 
-// Scroll Indicator
+// Scroll Status Indicator
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
@@ -31,10 +31,9 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 
 
 
-// Function to change webpage background color
+// Function to change webpage BACKGROUND COLOR
 function changeBodyBg(color1){
   document.body.style.background = color1;
-
 }
 
 // Random User API
@@ -56,8 +55,6 @@ fetch(url)
   const map1 = comments[Math.floor(Math.random() * comments.length)];
   
   return authors.map(function(author) {
-
-
     let li = createNode('li'),
         img = createNode('img'),
         span = createNode('span');
