@@ -31,12 +31,45 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 
 
 // Function to change webpage BACKGROUND COLOR
-function changeBodyBg(){
+function changeBodyPink(){
   // document.body.style.background = color1;
   let colorValues = [""];
   document.body.style.backgroundImage = "url('images/gradient4.jpg')";
   document.body.style.backgroundSize = "cover";
 }
+
+// Function to change webpage BACKGROUND COLOR
+function changeBodyKashmir(){
+  // document.body.style.background = color1;
+  let colorValues = [""];
+  document.body.style.backgroundImage = "url('images/gradient5.jpg')";
+  document.body.style.backgroundSize = "cover";
+}
+
+// Function to change webpage BACKGROUND COLOR
+function changeBodyGray(){
+  // document.body.style.background = color1;
+  let colorValues = [""];
+  document.body.style.backgroundImage = "url('images/gradient1.jpg')";
+  document.body.style.backgroundSize = "cover";
+}
+
+// Function to change webpage BACKGROUND COLOR
+function changeBodyRedBlue(){
+  // document.body.style.background = color1;
+  let colorValues = [""];
+  document.body.style.backgroundImage = "url('images/gradient2.jpg')";
+  document.body.style.backgroundSize = "cover";
+}
+
+// Function to change webpage BACKGROUND COLOR
+function changeBodyBlueGreen(){
+  // document.body.style.background = color1;
+  let colorValues = [""];
+  document.body.style.backgroundImage = "url('images/gradient3.jpg')";
+  document.body.style.backgroundSize = "cover";
+}
+
 
 
 // Random User API
