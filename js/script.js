@@ -30,11 +30,14 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 // gsap.to(".menuBlock", {y:100, duration: 1}); 
 
 
-
 // Function to change webpage BACKGROUND COLOR
-function changeBodyBg(color1){
-  document.body.style.background = color1;
+function changeBodyBg(){
+  // document.body.style.background = color1;
+  let colorValues = [""];
+  document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+  document.body.style.backgroundSize = "cover";
 }
+
 
 // Random User API
 function createNode(element) {
