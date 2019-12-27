@@ -55,7 +55,7 @@ function changeBodyGray(){
 }
 
 // Function to change webpage BACKGROUND COLOR
-function changeBodyRedBlue(){
+function changeBodyBlue(){
   // document.body.style.background = color1;
   let colorValues = [""];
   document.body.style.backgroundImage = "url('images/gradient2.jpg')";
