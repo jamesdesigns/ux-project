@@ -12,7 +12,7 @@ function myFunction() {
 }
 
 // Assign UX rules into an array
-let rules = ['Design for users.', 'The most important information on your webpage should always stand out as the most visually prominent.', 'Icons should only be used when necessary.', 'The main purpose of each webpage should be obvious to the user.', 'Users can focus on only one thing at a time.', 'Buttons on websites must look clickable and have enough space for users to click or tap comfortably.', 'Always have an obvious way to access the navigation menu.', 'Design for color blind users.', 'Provide absolute clarity.', 'Give users control.', 'Predict, then adapt.', 'Maintain consistency.', 'Treat users as customers and vice-versa.', 'Communicate value proposition.'];
+let rules = ['Design for users.', 'The most important information on your webpage should always stand out as the most visually prominent.', 'Icons should only be used when necessary.', 'The main purpose of each webpage should be obvious to the user.', 'Users can focus on only one thing at a time.', 'Buttons on websites must look clickable and have enough space for users to click or tap comfortably.', 'Always have an obvious way to access the navigation menu.', 'Design for color blind users.', 'Provide absolute clarity.', 'Give users control.', 'Predict, then adapt.', 'Maintain consistency.', 'Treat users as customers and vice-versa.', 'Communicate value proposition.', 'Improve accessibility, by considering contrast between the foreground and background colors.'];
 
 // Get the ID where the rules will output
 let newRule = document.getElementById("rules");
@@ -87,7 +87,7 @@ fetch(url)
 .then((resp) => resp.json())
 .then(function(data) {
   let authors = data.results;
-  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding information. I don't want to scroll over and over looking for products to buy.", "I love a seemless experience when shopping online!", "Having to scroll endlessly is not my idea of a fun experience.", "It is really frustrating filling out a long form, all to lose it when I accidentally navigate to another page!", "The best experience for me is when there is an element of surprise on every page I visit. I love when websites surprise and entertain me."];
+  const comments = ["I just want to be able to come to a site and have the quickest and easiest time finding information. I don't want to scroll over and over looking for products to buy.", "I love a seemless experience when shopping online!", "Having to scroll endlessly is not my idea of a fun experience.", "It is really frustrating filling out a long form, all to lose it when I accidentally navigate to another page!", "The best experience for me is when there is an element of surprise on every page I visit. I love when websites surprise and entertain me.", "Who doesn’t love a good deal? I want to find the best deal and compare all my options when purchasing a similar product or service."];
   const map1 = comments[Math.floor(Math.random() * comments.length)];
   
   return authors.map(function(author) {
