@@ -30,30 +30,21 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 // gsap.to(".menuBlock", {y:100, duration: 1}); 
 
 
-if (typeof(Storage) !== "undefined") {
-  // Store
-  localStorage.setItem("color", "red");
-  // Retrieve
-  document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-} else {
-  document.body.style.backgroundImage = "blue";
-}
+// if (typeof(Storage) !== "undefined") {
+//   // Store
+//   localStorage.setItem("color", "red");
+//   // Retrieve
+//   document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+// } else {
+//   document.body.style.backgroundImage = "blue";
+// }
 
 // Function to change webpage BACKGROUND COLOR
 function changeBodyPink(){
-  // var color = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-  // document.body.style.backgroundSize = "cover";
-  // console.log(color);
-  if (typeof(Storage) !== "undefined") {
-    // Store
-    localStorage.setItem("color", "url('images/gradient4.jpg')");
-    localStorage.getItem("color");
-    // Retrieve
-    document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-  } else {
-    document.body.style.backgroundImage = "url('images/gradient2.jpg')";
-  }
-};
+  var color = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+  document.body.style.backgroundSize = "cover";
+  console.log(color);
+}
 
 // Function to change webpage BACKGROUND COLOR
 function changeBodyKashmir(){
