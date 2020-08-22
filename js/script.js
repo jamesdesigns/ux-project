@@ -40,10 +40,18 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 // }
 
 // Function to change webpage BACKGROUND COLOR
+
+
+
 function changeBodyPink(){
   var color = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
   document.body.style.backgroundSize = "cover";
-  console.log(color);
+  var backgroundImage = localStorage.getItem('color');
+  if (backgroundImage) {
+    document.querySelector('#one').style.backgroundImage = url;
+  }
+
+  console.log(backgroundImage);
 }
 
 // Function to change webpage BACKGROUND COLOR
