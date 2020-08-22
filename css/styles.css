@@ -7,6 +7,7 @@ html {
     height: 100%;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body {
 }
 
 .main-p {
-    margin: 0 auto;
+    margin: 0 10%;
     color: white;
     font-size: 1.5rem;
     padding-left: 150px;
@@ -95,12 +96,33 @@ header {
     margin-right: auto;
 }
 
+.learn {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title3 {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 3rem;
+}
+
+.subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 2.5rem;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    height: 770px; 
+    /* height: auto;  */
+    height: 770px;
 }
 
 #customer {
