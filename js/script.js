@@ -1,4 +1,7 @@
 // JavaScript 
+var d = localStorage.setItem('test', "hello world!")
+alert( localStorage.getItem('test') ); // 1
+document.getElementById("test").innerText = localStorage.getItem('test');
 
 // Scroll Status Indicator
 // When the user scrolls the page, execute myFunction 
