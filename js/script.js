@@ -1,7 +1,32 @@
 // JavaScript 
-var d = localStorage.setItem('test', "hello world!")
-alert( localStorage.getItem('test') ); // 1
+var abc = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+var d = localStorage.setItem('test', abc)
+// alert( localStorage.getItem('test') );
 document.getElementById("test").innerText = localStorage.getItem('test');
+
+var e = localStorage.setItem('test2', "red");
+document.getElementById("test2").innerText = localStorage.getItem('test2');
+
+// var color = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+// var e = localStorage.setItem('test2', 'color');
+// e.addEventListner("click", funtion() {
+//   document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+
+// });
+
+// document.body.style.backgroundSize = "cover";
+// var backgroundImage = localStorage.getItem('color');
+// if (backgroundImage) {
+//   document.querySelector('#one').style.backgroundImage = url;
+// }
+
+// alert( localStorage.getItem('test2'));
+
+// document.addEventListener("click", function(){
+// let colorValues = [""];
+// document.body.style.backgroundImage = "url('images/gradient5.jpg')";
+// document.body.style.backgroundSize = "cover";
+// });
 
 // Scroll Status Indicator
 // When the user scrolls the page, execute myFunction 
