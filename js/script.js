@@ -1,6 +1,7 @@
 // JavaScript 
 var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-var d = localStorage.setItem('test', pink)
+var cover = document.body.style.backgroundSize = "cover";
+var d = localStorage.setItem('test', pink + cover)
 // alert( localStorage.getItem('test') );
 document.getElementById("test").innerText = localStorage.getItem('test');
 
