@@ -1,13 +1,19 @@
 // JavaScript 
-var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-var cover = document.body.style.backgroundSize = "cover";
-var d = localStorage.setItem('test', pink + cover)
-// alert( localStorage.getItem('test') );
-document.getElementById("test").innerText = localStorage.getItem('test');
+// var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+// var cover = document.body.style.backgroundSize = "cover";
+// var d = localStorage.setItem('test', pink + cover)
+// // alert( localStorage.getItem('test') );
+// document.getElementById("test").innerText = localStorage.getItem('test');
+
+// document.addEventListener("click", function(){
+// let colorValues = [""];
+// document.body.style.backgroundImage = "url('images/gradient5.jpg')";
+// document.body.style.backgroundSize = "cover";
+// });
 
 
-var e = localStorage.setItem('test2', "red");
-document.getElementById("test2").innerText = localStorage.getItem('test2');
+// var e = localStorage.setItem('test2', "red");
+// document.getElementById("test2").innerText = localStorage.getItem('test2');
 
 // var color = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
 // var e = localStorage.setItem('test2', 'color');
@@ -23,17 +29,13 @@ document.getElementById("test2").innerText = localStorage.getItem('test2');
 // }
 
 // alert( localStorage.getItem('test2'));
-document.addEventListner("click", function() {
-  var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-  var d = localStorage.setItem('test', pink)
-  // alert( localStorage.getItem('test') );
-  document.getElementById("test").innerText = localStorage.getItem('test');
-})
-// document.addEventListener("click", function(){
-// let colorValues = [""];
-// document.body.style.backgroundImage = "url('images/gradient5.jpg')";
-// document.body.style.backgroundSize = "cover";
-// });
+// document.addEventListner("click", function() {
+//   var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+//   var d = localStorage.setItem('test', pink)
+//   // alert( localStorage.getItem('test') );
+//   document.getElementById("test").innerText = localStorage.getItem('test');
+// })
+
 
 // Scroll Status Indicator
 // When the user scrolls the page, execute myFunction 
@@ -73,50 +75,42 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 // } else {
 //   document.body.style.backgroundImage = "blue";
 // }
+document.getElementById("one").addEventListener("click", function(){
+  var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+  var cover = document.body.style.backgroundSize = "cover";
+  var currentColor = localStorage.setItem('bgcolor', pink + cover)
+  // document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+  // document.body.style.backgroundImage = pink;
+  // document.body.style.backgroundSize = "cover";
+  document.getElementById("bg").value = localStorage.getItem('bgcolor');
+});
 
 // Function to change webpage BACKGROUND COLOR
-
-
-
-function changeBodyPink(){
-  // var color = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-  // document.body.style.backgroundSize = "cover";
-  // var backgroundImage = localStorage.getItem('color');
-  // if (backgroundImage) {
-  //   document.querySelector('#one').style.backgroundImage = url;
-  // }
-
-  // console.log(backgroundImage);
-}
+// function changeBodyPink(){
+//   document.body.style.backgroundImage = "url('images/gradient4.jpg')";
+//   document.body.style.backgroundSize = "cover";
+// }
 
 // Function to change webpage BACKGROUND COLOR
 function changeBodyKashmir(){
-  // document.body.style.background = color1;
-  let colorValues = [""];
   document.body.style.backgroundImage = "url('images/gradient5.jpg')";
   document.body.style.backgroundSize = "cover";
 }
 
 // Function to change webpage BACKGROUND COLOR
 function changeBodyGray(){
-  // document.body.style.background = color1;
-  let colorValues = [""];
   document.body.style.backgroundImage = "url('images/gradient1.jpg')";
   document.body.style.backgroundSize = "cover";
 }
 
 // Function to change webpage BACKGROUND COLOR
 function changeBodyBlue(){
-  // document.body.style.background = color1;
-  let colorValues = [""];
   document.body.style.backgroundImage = "url('images/gradient2.jpg')";
   document.body.style.backgroundSize = "cover";
 }
 
 // Function to change webpage BACKGROUND COLOR
 function changeBodyBlueGreen(){
-  // document.body.style.background = color1;
-  let colorValues = [""];
   document.body.style.backgroundImage = "url('images/gradient3.jpg')";
   document.body.style.backgroundSize = "cover";
 }
