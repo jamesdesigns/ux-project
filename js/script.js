@@ -78,10 +78,8 @@ gsap.to("#menuBtn", {y:-25, duration: 1});
 document.getElementById("one").addEventListener("click", function(){
   var pink = document.body.style.backgroundImage = "url('images/gradient4.jpg')";
   var cover = document.body.style.backgroundSize = "cover";
-  var currentColor = localStorage.setItem('bgcolor', pink + cover)
-  // document.body.style.backgroundImage = "url('images/gradient4.jpg')";
-  // document.body.style.backgroundImage = pink;
-  // document.body.style.backgroundSize = "cover";
+  localStorage.setItem('bgcolor', pink + cover);
+  var currentColor = localStorage.getItem('bgcolor');
   document.getElementById("bg").value = localStorage.getItem('bgcolor');
 });
 
